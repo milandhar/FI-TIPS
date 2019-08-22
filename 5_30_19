@@ -1,0 +1,86 @@
+def fibonacci(n)
+    return 1 if n <= 2
+    index = 3
+    a = 1
+    b = 1
+    while index <= n
+        c=a+b
+        puts "a = #{a}"
+        puts "b = #{b}"
+        puts "a+b = #{c}"
+        puts "index = #{index}"
+        puts "============"
+        a=b
+        b=c
+        index +=1
+
+    end
+   puts "The number at the #{n} position is #{c}"
+end
+
+fibonacci(10)
+
+  def fibonacci_loop_do(n)
+    return 1 if n <= 2
+    index = 2
+    a = 1
+    b = 1
+    c = 0
+    loop do
+      c=a+b
+      a = b
+      b = c
+      index +=1
+      if index >= n
+        break
+      end
+    end
+    puts "The number at the #{n} position is #{c}"
+  end
+
+  def fibonacci_until(n)
+    a=1
+    b=1
+    index=0
+    c=0
+    until index >=n
+      a=b
+      b=c
+      c=a+b
+      index+=1
+    end
+    puts "The number at the #{n} position is #{c}"
+  end
+
+  def fibonacci_times_do(n)
+      return 1 if n <= 2
+    a=1
+    b=1
+    c=0
+
+    n.times do
+      a=b
+      b=c
+      c=a+b
+    end
+    puts "The number at the #{n} position is #{c}"
+  end
+
+
+  def fibonacci_up_to(n)
+      return 1 if n <= 2
+      index = 3
+      a = 1
+      b = 1
+      arr = [a,b]
+      while index <= n
+        c = a+b
+        a=b
+        b=c
+        index+=1
+        arr << c
+      end
+
+        puts arr
+
+  end

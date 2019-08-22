@@ -1,0 +1,20 @@
+require 'distribution'
+
+def n_choose_k(n, k)
+  Math.factorial(n) / (Math.factorial(k) * Math.factorial(n - k))
+end
+
+def triangle(row)
+    if row == 0
+      puts "1"
+    elsif row == 1
+      puts "1, 1"
+    else
+
+    (0..row).each do |i|
+     puts n_choose_k(row, i )
+    end
+  end
+end
+
+triangle(200)

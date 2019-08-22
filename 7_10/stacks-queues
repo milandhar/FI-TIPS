@@ -1,0 +1,14 @@
+- Arrays, linked lists are linear (form a sequence)
+- Trees, graphs are non-linear ()
+
+Stacks and queues are two more linear data structures
+
+
+#Stacks
+- Like washing a stack of plates - can only wash the one on top. Last in first out (LIFO)
+- Stack uses 'top' (ex. this.top) 
+
+
+#Queue
+- Elements get added to back of the line, removed from front
+- Like a line, First in first out(FIFO)
