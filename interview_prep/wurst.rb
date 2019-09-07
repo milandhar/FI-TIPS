@@ -1,4 +1,17 @@
-
+# def oldest(people)
+# 	i = 0
+# 	names = people.keys
+# 	largest = people[names[0]]
+# 	oldest = names[0]
+# 	while i < names.length
+# 		if people[names[i]] > largest
+# 			largest = people[names[i]]
+# 			oldest = names[i]
+# 		end
+# 		i += 1
+# 	end
+# 	oldest
+# end
 
 
 
