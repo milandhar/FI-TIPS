@@ -28,5 +28,7 @@ def reverse_array(arr)
   arr
 end
 
+# Reverse an array without using the reverse method, without using a second array,
+# and without duplicating any of the values.  
 
 p reverse_array([5, 9, 10, -1, 0, 3, 10])
